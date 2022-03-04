@@ -2,8 +2,8 @@ import requests
 
 def test_status_and_data():
     headers = {
-    'Accept': '*/*',
-    'User-Agent': 'request',
+        'Accept': '*/*',
+        'User-Agent': 'request',
     }
 
     url = "http://dummy.restapiexample.com/api/v1/employees"
@@ -14,4 +14,4 @@ def test_status_and_data():
     status = resposta_dict['status']
     tamanho = len(resposta_dict['data'])
 
-    assert ((status == 'sucess') and (tamanho > 0))
+    assert ((status == 'success') and (tamanho > 0))
